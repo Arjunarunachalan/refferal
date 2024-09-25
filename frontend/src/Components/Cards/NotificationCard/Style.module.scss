@@ -1,0 +1,86 @@
+@import '../../../StyleHelpers/Variables.scss';
+
+
+
+
+/* Notification Card */
+
+
+.alert_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .Item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem 0;
+        margin-bottom: .5rem;
+        border-bottom: 1px solid $base-color;
+        cursor: pointer;
+
+        @include breakpoint(md) {
+            height: 50px;
+        }
+
+        .left {
+            display: flex;
+            flex: 2;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: #fff;
+                object-fit: contain;
+
+                @include breakpoint(md) {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            h4 {
+                padding: 0 2rem;
+                text-align: start;
+                font-size: 1rem;
+                font-weight: 400;
+
+                @include breakpoint(md) {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+            align-items: center;
+
+            span {
+                font-size: 12px;
+            }
+
+            .activeItem {
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                color: $primary_color;
+                border-radius: 100%;
+                margin: 0 10px;
+            }
+        }
+
+    }
+
+}
+
+/* End Notification Card */

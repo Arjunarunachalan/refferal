@@ -1,0 +1,30 @@
+@import "../../StyleHelpers/Variables.scss";
+
+.outer_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .conatiner {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease-in-out;
+
+    .reward_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+   
+      @include breakpoint(md) {
+       gap: 0;
+      }
+      @include mediumScreen {
+
+        gap: 100px;
+    }
+    }
+  }
+}

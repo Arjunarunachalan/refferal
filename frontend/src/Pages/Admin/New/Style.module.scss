@@ -1,0 +1,606 @@
+@import '../../../StyleHelpers/Variables.scss';
+
+.new {
+    width: 100%;
+    display: flex;
+
+    .newContainer {
+        flex: 6;
+
+        .bottom,
+        .center,
+        .bottomTable,
+        .centerDiv {
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        }
+
+        .bottomTable,
+        .centerDiv {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .top,
+        .bottom,
+        .center,
+        .bottomTable,
+        .centerDiv {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            display: flex;
+
+            h1 {
+                color: $base_color4;
+                font-size: 20px;
+            }
+
+            //Filter form styling
+            .input_contents {
+                padding: .5rem;
+
+                .field_wrapper {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 1rem;
+                    margin-bottom: 1rem;
+
+                    .input_field {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            gap: 10px;
+                            font-size: 15px;
+
+                            span {
+                                color: red;
+                            }
+
+                            .icon {
+                                cursor: pointer;
+                            }
+                        }
+
+                        input {
+                            height: 30px;
+                            padding: .5rem;
+                            outline: none;
+                            border-radius: 5px;
+                            font-size: 15px;
+                            background: none;
+                            border: 1px solid #ccc;
+                        }
+
+                        select {
+                            height: 46px;
+                            padding: 0 .5rem;
+                            outline: none;
+                            border-radius: 5px;
+                            font-size: 15px;
+                            background: none;
+                            border: 1px solid #ccc;
+                        }
+                    }
+                }
+
+                .additionalOptions {
+                    .field_wrapper {
+                        .additionalOptions_btn {
+                            width: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .optionButton {
+                                padding: .5rem 2rem;
+                                border: none;
+                                text-align: center;
+                                background-color: $primary_color;
+                                border-radius: 5px;
+                                color: white;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .input_contentBtn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: .5rem;
+
+                        .optionButton {
+                            width: 100px;
+                            padding: .5rem;
+                            border: none;
+                            text-align: center;
+                            background-color: $primary_color;
+                            border-radius: 5px;
+                            color: white;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .formButtonDiv {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: .5rem;
+
+                .Button_wrapper {
+                    display: flex;
+                    gap: 1rem;
+
+                    button {
+                        width: 150px;
+                        padding: .8rem;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: $primary_color;
+                        color: white;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+            //End 
+
+            .leftItem {
+                flex: 1;
+                text-align: center;
+
+                .SquareImg {
+                    width: 100%;
+                    height: 150px;
+                    border-radius: 0%;
+                    object-fit: scale-down;
+                }
+            }
+
+            .left {
+                flex: 1;
+                text-align: center;
+                border-right: 1px solid $base_color4 ;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                    margin-top: 20px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .right {
+                flex: 2;
+                padding: 10px 20px;
+
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    justify-content: space-between;
+                    margin: 10px 0px;
+
+                    .formImg {
+                        width: 100%;
+                        padding: 10px;
+                    }
+
+                    .formItem {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .formInput {
+                        width: 40%;
+
+                        p {
+                            font-size: 12px;
+                            color: red;
+                        }
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            margin-bottom: 10px;
+
+                            span {
+                                color: red;
+                            }
+
+                            .icon {
+                                cursor: pointer;
+                            }
+                        }
+
+                        input {
+                            width: 100%;
+                            height: 40px;
+                            outline: none;
+                            border-radius: 5px;
+                            font-size: 15px;
+                            background: none;
+                            text-align: center;
+                            border: 1px solid #ccc;
+                            --moz-appearance: none;
+                        }
+
+                        input[type="number"] {
+                            -moz-appearance: textfield;
+                            appearance: textfield;
+
+                            &::-webkit-inner-spin-button,
+                            &::-webkit-outer-spin-button {
+                                -webkit-appearance: none;
+                                margin: 0;
+                            }
+                        }
+
+                        select {
+                            width: 100%;
+                            height: 40px;
+                            outline: none;
+                            border-radius: 5px;
+                            font-size: 15px;
+                            background: none;
+                            text-align: center;
+                            border: 1px solid #ccc;
+                        }
+                    }
+
+                    //Plan form styling
+                    .featuresForm {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        padding: 20px 0;
+                        gap: 40px;
+
+                        .formInput {
+                            width: 40%;
+                        }
+
+                        .featurebtn {
+                            span {
+                                padding: 10px 20px;
+                                background-color: $primary_color;
+                                color: #fff;
+                                border: none;
+                                border-radius: 5px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    //End plan form styling
+
+                    .formproperty {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        textarea {
+                            height: 8rem;
+                            outline: none;
+                            border-radius: 5px;
+                            padding: 10px;
+                            font-size: 15px;
+                            background: none;
+                            border: 1px solid #ccc;
+                        }
+
+                        .formWrapper {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            gap: 10px;
+
+                            .formInput {
+                                width: 30%;
+                            }
+                        }
+
+                        .formWrap {
+                            display: flex;
+                            flex-direction: column;
+
+                            .formInput {
+                                width: 100%;
+                                margin: 10px 0;
+                            }
+                        }
+
+                        .formWrapper,
+                        .formWrap {
+                            .formInput {
+                                label {
+                                    span {
+                                        color: red;
+                                        border: none;
+                                    }
+
+                                    .icon {
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                input {
+                                    width: 100%;
+                                    height: 40px;
+                                    outline: none;
+                                    border-radius: 5px;
+                                    font-size: 15px;
+                                    background: none;
+                                    text-align: center;
+                                    border: 1px solid #ccc;
+                                    --moz-appearance: none;
+                                }
+
+                                input[type="number"] {
+                                    -moz-appearance: textfield;
+                                    appearance: textfield;
+
+                                    &::-webkit-inner-spin-button,
+                                    &::-webkit-outer-spin-button {
+                                        -webkit-appearance: none;
+                                        margin: 0;
+                                    }
+                                }
+
+                                textarea {
+                                    width: 100%;
+                                    height: 8rem;
+                                    outline: none;
+                                    border-radius: 5px;
+                                    padding: 10px 2px;
+                                    font-size: 15px;
+                                    background: none;
+                                    border: 1px solid #ccc;
+                                }
+                            }
+
+                            //DocumentForm form button wrap
+                            .formButtonWrap {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: flex-end;
+
+                                .formButton {
+                                    padding: 10px 20px;
+                                    border: none;
+                                    background-color: $primary_color;
+                                    border-radius: 5px;
+                                    color: white;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            //End DocumentForm form button wrap
+
+                            .formSelect {
+                                width: 15%;
+                                display: flex;
+                                flex-direction: column;
+
+                                label {
+                                    margin-bottom: 10px;
+
+                                    span {
+                                        color: red;
+                                        border: none;
+                                    }
+                                }
+
+                                select {
+                                    width: 100%;
+                                    height: 40px;
+                                    outline: none;
+                                    border-radius: 5px;
+                                    font-size: 15px;
+                                    background: none;
+                                    text-align: center;
+                                    border: 1px solid #ccc;
+                                }
+                            }
+
+                            .newform {
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                padding: 20px 0;
+                                gap: 40px;
+
+                                //subcategoryForm styling
+                                .formInput {
+                                    width: 40%;
+                                }
+
+                                //DocumentForm styling
+                                .formDescrption {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    textarea {
+                                        margin-top: 0.5rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        .toggleBtn {
+                            width: 180px;
+                            padding: 10px 20px;
+                            border: 1px solid $primary_color;
+                            background-color: #fff;
+                            border-radius: 5px;
+                            color: $primary_color;
+                            font-weight: bold;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+
+                        .propertyBtn {
+                            padding: 10px 20px;
+                            border: none;
+                            background-color: $primary_color;
+                            border-radius: 5px;
+                            color: white;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .formBtn {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                        button {
+                            width: 150px;
+                            padding: 10px;
+                            border: none;
+                            border-radius: 5px;
+                            background-color: $primary_color;
+                            color: white;
+                            font-weight: bold;
+                            margin: 20px 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            //---bottom container-----
+
+            .title {
+                font-size: 16px;
+                color: $base_color4;
+                margin: 10px 0;
+            }
+
+            .details {
+                flex: 1;
+                padding: 10px 20px;
+                border-radius: 5px;
+                position: relative;
+                border: 1px solid $base_color3;
+                display: flex;
+                justify-content: space-between;
+
+                .left_wrap {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .left {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .left,
+                .left_wrap {
+                    flex: 6;
+
+                    .detailItem {
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        .itemKey {
+                            font-weight: bold;
+                            color: gray;
+                            margin-right: 5px;
+                        }
+
+                        .itemValue {
+                            font-weight: 300;
+                        }
+                    }
+
+                    //Option listing styling
+                    .option_wrap {
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                        display: flex;
+                        flex-direction: column;
+
+                        .option_title {
+                            font-size: 16px;
+                            margin: 10px 0;
+                        }
+
+                        .Items {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 10px;
+
+                            .Item {
+                                display: flex;
+                                gap: 2px;
+                            }
+
+                            //Document form options listing styling
+                            .DocumentItem {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 5px;
+                            }
+
+                            //End document form options listing styling
+                        }
+                    }
+                }
+
+                .right {
+                    flex: 2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    button {
+                        background-color: #fff;
+                        color: red;
+                        border-radius: 5px;
+                        border: none;
+                        cursor: pointer;
+                    }
+
+                    .rembtn {
+                        padding: 10px;
+                        background-color: red;
+                        color: #fff;
+                        border-radius: 5px;
+                        border: none;
+                        margin: 10px 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+    }
+}

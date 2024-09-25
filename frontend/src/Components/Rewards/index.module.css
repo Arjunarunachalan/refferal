@@ -1,0 +1,28 @@
+.outer_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.outer_container .conatiner {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out;
+}
+.outer_container .conatiner .reward_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+}
+@media (max-width: 550px) {
+  .outer_container .conatiner .reward_container {
+    gap: 0;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .outer_container .conatiner .reward_container {
+    gap: 100px;
+  }
+}/*# sourceMappingURL=index.module.css.map */

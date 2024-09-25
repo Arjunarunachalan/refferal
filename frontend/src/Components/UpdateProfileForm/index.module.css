@@ -1,0 +1,396 @@
+.content_wrapper {
+  width: 100%;
+}
+.content_wrapper .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content_wrapper .container .main_row {
+  width: 100%;
+  display: block;
+}
+.content_wrapper .container .main_row form {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 550px) {
+  .content_wrapper .container .main_row form {
+    flex-direction: column;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .content_wrapper .container .main_row form {
+    flex-direction: column;
+  }
+}
+.content_wrapper .container .main_row form .left {
+  flex: 1;
+  border-right: 2px solid #ebebeb;
+}
+@media (max-width: 550px) {
+  .content_wrapper .container .main_row form .left {
+    border-bottom: 2px solid #ebebeb;
+    border-right: none;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .content_wrapper .container .main_row form .left {
+    border-bottom: 2px solid #ebebeb;
+    border-right: none;
+  }
+}
+.content_wrapper .container .main_row form .right {
+  flex: 3;
+}
+.content_wrapper .container .main_row form .left,
+.content_wrapper .container .main_row form .right {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 40px;
+}
+@media (max-width: 550px) {
+  .content_wrapper .container .main_row form .left,
+  .content_wrapper .container .main_row form .right {
+    padding: 0.5rem;
+  }
+}
+.content_wrapper .container .main_row form .left .title,
+.content_wrapper .container .main_row form .right .title {
+  margin-bottom: 1rem;
+}
+.content_wrapper .container .main_row form .left .title h2,
+.content_wrapper .container .main_row form .right .title h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.content_wrapper .container .main_row form .left .notificationDiv,
+.content_wrapper .container .main_row form .right .notificationDiv {
+  padding: 12px 20px;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  background: #046BD2;
+}
+.content_wrapper .container .main_row form .left .notificationDiv p,
+.content_wrapper .container .main_row form .right .notificationDiv p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.content_wrapper .container .main_row form .left .row,
+.content_wrapper .container .main_row form .right .row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.content_wrapper .container .main_row form .left .row .left_col,
+.content_wrapper .container .main_row form .right .row .left_col {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content_wrapper .container .main_row form .left .row .left_col .Image_info,
+.content_wrapper .container .main_row form .right .row .left_col .Image_info {
+  width: 120px;
+  height: 120px;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.content_wrapper .container .main_row form .left .row .left_col .Image_info img,
+.content_wrapper .container .main_row form .right .row .left_col .Image_info img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.content_wrapper .container .main_row form .left .row .left_col .Image_info .formImage,
+.content_wrapper .container .main_row form .right .row .left_col .Image_info .formImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #046BD2;
+  position: absolute;
+  right: -5px;
+  bottom: 1rem;
+}
+.content_wrapper .container .main_row form .left .row .left_col .Image_info .formImage label,
+.content_wrapper .container .main_row form .right .row .left_col .Image_info .formImage label {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content_wrapper .container .main_row form .left .row .left_col .Image_info .formImage label i,
+.content_wrapper .container .main_row form .right .row .left_col .Image_info .formImage label i {
+  display: flex;
+  align-items: center;
+}
+.content_wrapper .container .main_row form .left .row .items,
+.content_wrapper .container .main_row form .right .row .items {
+  width: 100%;
+}
+.content_wrapper .container .main_row form .left .row .items .item,
+.content_wrapper .container .main_row form .right .row .items .item {
+  background-color: #fff;
+  padding: 1rem 0.6rem;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  cursor: pointer;
+}
+.content_wrapper .container .main_row form .left .row .items .item span,
+.content_wrapper .container .main_row form .right .row .items .item span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.content_wrapper .container .main_row form .left .row .items .item span i,
+.content_wrapper .container .main_row form .right .row .items .item span i {
+  display: flex;
+  align-items: center;
+  color: #046BD2;
+  font-size: 1rem;
+}
+.content_wrapper .container .main_row form .left .row .items .item span .del_icon,
+.content_wrapper .container .main_row form .right .row .items .item span .del_icon {
+  color: red;
+}
+.content_wrapper .container .main_row form .left .form_wrapper,
+.content_wrapper .container .main_row form .right .form_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.content_wrapper .container .main_row form .left .form_wrapper input,
+.content_wrapper .container .main_row form .right .form_wrapper input {
+  height: 40px;
+  padding: 0.4rem 1rem;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 300;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  transition: all 0.3s;
+  box-shadow: none;
+  outline: none;
+}
+.content_wrapper .container .main_row form .left .form_wrapper button,
+.content_wrapper .container .main_row form .right .form_wrapper button {
+  border: none;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content_wrapper .container .main_row form .left .form_wrapper .error,
+.content_wrapper .container .main_row form .right .form_wrapper .error {
+  color: red;
+  font-size: 14px;
+}
+@media (max-width: 550px) {
+  .content_wrapper .container .main_row form .left .form_wrapper .error,
+  .content_wrapper .container .main_row form .right .form_wrapper .error {
+    font-size: 12px;
+  }
+}
+.content_wrapper .container .main_row form .left .form_wrapper span,
+.content_wrapper .container .main_row form .right .form_wrapper span {
+  color: red;
+}
+.content_wrapper .container .main_row form .left .form_wrapper .row,
+.content_wrapper .container .main_row form .right .form_wrapper .row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+.content_wrapper .container .main_row form .left .form_wrapper .flex_row,
+.content_wrapper .container .main_row form .right .form_wrapper .flex_row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 550px) {
+  .content_wrapper .container .main_row form .left .form_wrapper .flex_row,
+  .content_wrapper .container .main_row form .right .form_wrapper .flex_row {
+    flex-direction: column;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .content_wrapper .container .main_row form .left .form_wrapper .flex_row,
+  .content_wrapper .container .main_row form .right .form_wrapper .flex_row {
+    flex-direction: column;
+  }
+}
+.content_wrapper .container .main_row form .left .form_wrapper .button_row,
+.content_wrapper .container .main_row form .right .form_wrapper .button_row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 10px 0;
+}
+.content_wrapper .container .main_row form .left .form_wrapper .button_row .cancelBtn button,
+.content_wrapper .container .main_row form .right .form_wrapper .button_row .cancelBtn button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #046BD2;
+  border: 2px solid #046BD2;
+}
+.content_wrapper .container .main_row form .left .form_wrapper .button_row .submitBtn button,
+.content_wrapper .container .main_row form .right .form_wrapper .button_row .submitBtn button {
+  padding: 10px 40px;
+  background-color: #046BD2;
+  color: #fff;
+}
+.content_wrapper .container .main_row form .left .form_wrapper .row .col,
+.content_wrapper .container .main_row form .left .form_wrapper .flex_row .col,
+.content_wrapper .container .main_row form .left .form_wrapper .border_row .col,
+.content_wrapper .container .main_row form .right .form_wrapper .row .col,
+.content_wrapper .container .main_row form .right .form_wrapper .flex_row .col,
+.content_wrapper .container .main_row form .right .form_wrapper .border_row .col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (max-width: 550px) {
+  .content_wrapper .container .main_row form .left .form_wrapper .row .col label,
+  .content_wrapper .container .main_row form .left .form_wrapper .flex_row .col label,
+  .content_wrapper .container .main_row form .left .form_wrapper .border_row .col label,
+  .content_wrapper .container .main_row form .right .form_wrapper .row .col label,
+  .content_wrapper .container .main_row form .right .form_wrapper .flex_row .col label,
+  .content_wrapper .container .main_row form .right .form_wrapper .border_row .col label {
+    font-size: 14px;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .content_wrapper .container .main_row form .left .form_wrapper .row .col label,
+  .content_wrapper .container .main_row form .left .form_wrapper .flex_row .col label,
+  .content_wrapper .container .main_row form .left .form_wrapper .border_row .col label,
+  .content_wrapper .container .main_row form .right .form_wrapper .row .col label,
+  .content_wrapper .container .main_row form .right .form_wrapper .flex_row .col label,
+  .content_wrapper .container .main_row form .right .form_wrapper .border_row .col label {
+    font-size: 16px;
+  }
+}
+.content_wrapper .container .main_row form .left .form_wrapper .row .col .dobInput,
+.content_wrapper .container .main_row form .left .form_wrapper .flex_row .col .dobInput,
+.content_wrapper .container .main_row form .left .form_wrapper .border_row .col .dobInput,
+.content_wrapper .container .main_row form .right .form_wrapper .row .col .dobInput,
+.content_wrapper .container .main_row form .right .form_wrapper .flex_row .col .dobInput,
+.content_wrapper .container .main_row form .right .form_wrapper .border_row .col .dobInput {
+  width: 100%;
+  height: 40px;
+  padding: 0.4rem 0;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 300;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  transition: all 0.3s;
+  box-shadow: none;
+  outline: none;
+}
+.content_wrapper .container .main_row form .left .form_wrapper .row .col .border_col,
+.content_wrapper .container .main_row form .left .form_wrapper .flex_row .col .border_col,
+.content_wrapper .container .main_row form .left .form_wrapper .border_row .col .border_col,
+.content_wrapper .container .main_row form .right .form_wrapper .row .col .border_col,
+.content_wrapper .container .main_row form .right .form_wrapper .flex_row .col .border_col,
+.content_wrapper .container .main_row form .right .form_wrapper .border_row .col .border_col {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  background: #fff;
+}
+.content_wrapper .container .main_row form .left .form_wrapper .row .col .border_col .borderless,
+.content_wrapper .container .main_row form .left .form_wrapper .flex_row .col .border_col .borderless,
+.content_wrapper .container .main_row form .left .form_wrapper .border_row .col .border_col .borderless,
+.content_wrapper .container .main_row form .right .form_wrapper .row .col .border_col .borderless,
+.content_wrapper .container .main_row form .right .form_wrapper .flex_row .col .border_col .borderless,
+.content_wrapper .container .main_row form .right .form_wrapper .border_row .col .border_col .borderless {
+  border: none;
+  flex: 2;
+}
+.content_wrapper .container .main_row form .left .form_wrapper .row .col .border_col .check,
+.content_wrapper .container .main_row form .left .form_wrapper .flex_row .col .border_col .check,
+.content_wrapper .container .main_row form .left .form_wrapper .border_row .col .border_col .check,
+.content_wrapper .container .main_row form .right .form_wrapper .row .col .border_col .check,
+.content_wrapper .container .main_row form .right .form_wrapper .flex_row .col .border_col .check,
+.content_wrapper .container .main_row form .right .form_wrapper .border_row .col .border_col .check {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content_wrapper .container .main_row form .left .form_wrapper .row .col .border_col .check span,
+.content_wrapper .container .main_row form .left .form_wrapper .flex_row .col .border_col .check span,
+.content_wrapper .container .main_row form .left .form_wrapper .border_row .col .border_col .check span,
+.content_wrapper .container .main_row form .right .form_wrapper .row .col .border_col .check span,
+.content_wrapper .container .main_row form .right .form_wrapper .flex_row .col .border_col .check span,
+.content_wrapper .container .main_row form .right .form_wrapper .border_row .col .border_col .check span {
+  color: #03C03C;
+}
+.content_wrapper .container .main_row form .left .form_wrapper .row .col .flex_col,
+.content_wrapper .container .main_row form .left .form_wrapper .flex_row .col .flex_col,
+.content_wrapper .container .main_row form .left .form_wrapper .border_row .col .flex_col,
+.content_wrapper .container .main_row form .right .form_wrapper .row .col .flex_col,
+.content_wrapper .container .main_row form .right .form_wrapper .flex_row .col .flex_col,
+.content_wrapper .container .main_row form .right .form_wrapper .border_row .col .flex_col {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.content_wrapper .container .main_row form .left .form_wrapper .row .col .flex_col .form_Input,
+.content_wrapper .container .main_row form .left .form_wrapper .flex_row .col .flex_col .form_Input,
+.content_wrapper .container .main_row form .left .form_wrapper .border_row .col .flex_col .form_Input,
+.content_wrapper .container .main_row form .right .form_wrapper .row .col .flex_col .form_Input,
+.content_wrapper .container .main_row form .right .form_wrapper .flex_row .col .flex_col .form_Input,
+.content_wrapper .container .main_row form .right .form_wrapper .border_row .col .flex_col .form_Input {
+  flex: 2;
+}
+.content_wrapper .container .main_row form .left .form_wrapper .row .col .flex_col .form_button,
+.content_wrapper .container .main_row form .left .form_wrapper .flex_row .col .flex_col .form_button,
+.content_wrapper .container .main_row form .left .form_wrapper .border_row .col .flex_col .form_button,
+.content_wrapper .container .main_row form .right .form_wrapper .row .col .flex_col .form_button,
+.content_wrapper .container .main_row form .right .form_wrapper .flex_row .col .flex_col .form_button,
+.content_wrapper .container .main_row form .right .form_wrapper .border_row .col .flex_col .form_button {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.content_wrapper .container .main_row form .left .form_wrapper .row .col .flex_col .form_button button,
+.content_wrapper .container .main_row form .left .form_wrapper .flex_row .col .flex_col .form_button button,
+.content_wrapper .container .main_row form .left .form_wrapper .border_row .col .flex_col .form_button button,
+.content_wrapper .container .main_row form .right .form_wrapper .row .col .flex_col .form_button button,
+.content_wrapper .container .main_row form .right .form_wrapper .flex_row .col .flex_col .form_button button,
+.content_wrapper .container .main_row form .right .form_wrapper .border_row .col .flex_col .form_button button {
+  background-color: #03C03C;
+}/*# sourceMappingURL=index.module.css.map */

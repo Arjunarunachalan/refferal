@@ -1,0 +1,733 @@
+@import "../../StyleHelpers/Variables.scss";
+
+.header_container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: $base_color3;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+
+  .Container {
+    padding: 0 60px;
+    min-height: 5rem;
+    display: flex;
+    justify-content: center;
+    place-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 999;
+    gap: 30px;
+
+    @include breakpoint(md) {
+      gap: 0;
+      padding: 0.4rem 0.6rem;
+      flex-direction: column;
+    }
+
+    @include mediumScreen {
+      gap: 0;
+      padding: 0.4rem 0.8rem;
+      flex-direction: column;
+    }
+
+    @include LargeScreen {
+      padding: 0 40px;
+      gap: 10px;
+    }
+
+    .navigation {
+      position: relative;
+      text-decoration: none;
+      color: #111;
+    }
+
+    .Branding {
+      flex: 2;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include breakpoint(md) {
+        justify-content: space-between;
+      }
+
+      @include mediumScreen {
+        justify-content: space-between;
+      }
+
+      .PostAdBtn_Div {
+        display: none;
+
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 120px;
+          height: 2rem;
+          border: none;
+          color: #fff;
+          margin: 0;
+          background: $gradient_color;
+          padding: 0.3rem 0.6rem;
+          border-radius: 3px;
+          font-size: 0.7rem;
+          font-weight: 600;
+          cursor: pointer;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+
+        @include breakpoint(md) {
+          display: contents;
+          position: relative;
+        }
+
+        @include mediumScreen {
+          display: contents;
+          position: relative;
+        }
+      }
+
+      .Branding_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        button {
+          border: 0;
+          background: transparent;
+          aspect-ratio: 1;
+          font-size: 24px;
+          display: none;
+          cursor: pointer;
+
+          &:hover {
+            color: $primary_color;
+          }
+
+          @include breakpoint(md) {
+            display: flex;
+            align-items: center;
+          }
+
+          @include mediumScreen {
+            display: flex;
+            align-items: center;
+          }
+          @include breakpoint(md) {
+            display: block;
+          }
+        }
+      }
+      .mobiletrnslator {
+        display: none;
+        @include breakpoint(md) {
+          display: block;
+          select {
+            width: 58px;
+            max-width: 58px;
+            font-size: 10px;
+            height: 30px;
+          }
+        }
+      }
+      h1 {
+        color: $primary_color;
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin: 0.4rem 0;
+        cursor: pointer;
+
+        @include breakpoint(md) {
+          font-size: 1.3rem;
+          font-weight: 600;
+          padding: 5px 0;
+          margin: 0.3rem 0;
+        }
+
+        @include mediumScreen {
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+
+        @include LargeScreen {
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    .Search {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      flex: 4;
+      margin: 5px;
+      position: relative;
+
+      @include breakpoint(md) {
+        width: 100%;
+      }
+
+      @include mediumScreen {
+        width: 100%;
+      }
+
+      @include LargeScreen {
+        flex: 5;
+      }
+
+      .Search_container {
+        width: 100%;
+        height: 1.8rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid $primary_color;
+        padding: 5px;
+
+        @include breakpoint(md) {
+          font-size: 1.6rem;
+        }
+
+        @include LargeScreen {
+          font-size: 1.8rem;
+        }
+
+        // Your dropdown styles here
+        .dropdown {
+          height: 90%;
+          display: flex;
+          align-items: center;
+          border-right: 1px solid $base-color4;
+          margin-right: 10px;
+          padding: 10px;
+
+          @include breakpoint(md) {
+            display: none;
+          }
+
+          // Styling for the select element
+          p {
+            width: 130px;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            cursor: pointer;
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10 and IE 11 */
+            user-select: none; /* Standard syntax */
+            color: #666;
+          }
+          .iconWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #666;
+          }
+        }
+
+        .dropdown_mobile {
+          display: none;
+
+          @include breakpoint(md) {
+            display: block;
+          }
+        }
+
+        input {
+          display: flex;
+          align-items: center;
+          border: none;
+          font-size: 14px;
+          letter-spacing: 1px;
+          color: inherit;
+          font-weight: 100px;
+          background: transparent;
+          outline: none;
+          width: 90%;
+          text-align: start;
+
+          @include breakpoint(md) {
+          }
+        }
+
+        div {
+          select {
+            border: none;
+            background: transparent;
+            outline: 0;
+
+            option {
+              border: none;
+              background: transparent;
+              outline: none;
+            }
+          }
+        }
+
+        button {
+          position: absolute;
+          color: white;
+          right: 0;
+          font-size: 20px;
+          border: none;
+          aspect-ratio: 1;
+          background-color: $primary_color;
+          height: 100%;
+          width: 60px;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+      }
+    }
+    .translator {
+      display: block;
+      @include breakpoint(md) {
+        display: none;
+      }
+    }
+
+    @include mediumScreen {
+      display: none;
+    }
+
+    @include LargeScreen {
+      gap: 10px;
+    }
+  }
+  .Options {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 2;
+
+    @include breakpoint(md) {
+      display: none;
+    }
+
+    @include mediumScreen {
+      display: none;
+    }
+
+    @include LargeScreen {
+      gap: 10px;
+    }
+
+    .OptionsWrapper {
+      position: relative;
+
+      .icon {
+        color: black;
+        aspect-ratio: 1;
+        font-size: 20px;
+
+        @include breakpoint(md) {
+          display: none;
+        }
+
+        @include mediumScreen {
+          display: none;
+        }
+      }
+
+      .count {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1rem;
+        height: 1rem;
+        padding: 1px;
+        font-size: 0.6rem;
+        color: #fff;
+        background-color: $primary_color;
+        border-radius: 50%;
+
+        @include breakpoint(md) {
+          display: none;
+        }
+
+        @include mediumScreen {
+          display: none;
+        }
+      }
+    }
+
+    .profile {
+      position: relative;
+      aspect-ratio: 1;
+      width: 35px;
+      height: 35px;
+      border-radius: 7px;
+      border: 1px solid $base_color;
+
+      @include breakpoint(md) {
+        display: none;
+      }
+
+      @include mediumScreen {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 7px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+    }
+
+    .RegButtonContainer {
+      button {
+        border: none;
+        background: transparent;
+        color: white;
+        background-color: $primary_color;
+        padding: 10px 12px;
+        border-radius: 5px;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+          background-color: white;
+          border: 1px solid $primary_color;
+          color: $primary_color;
+        }
+      }
+
+      @include breakpoint(md) {
+        display: none;
+      }
+
+      @include mediumScreen {
+        display: none;
+      }
+    }
+
+    .ButtonContainer {
+      position: relative;
+
+      button {
+        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-overflow: ellipsis;
+        border: none;
+        background: transparent;
+        color: white;
+        background: $gradient_color;
+        padding: 9px 3px;
+        border-radius: 5px;
+        font-size: 11px;
+        text-overflow: ellipsis;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+          background: white;
+          border: 1px solid $primary_color;
+          color: $primary_color;
+        }
+      }
+
+      @include breakpoint(md) {
+        display: none;
+      }
+
+      @include mediumScreen {
+        display: none;
+      }
+    }
+  }
+
+  //--------- Mobile_Screen Styling ----------
+
+  .Mobile_screen {
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+    backdrop-filter: blur(10px);
+    width: 275px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    overflow-y: scroll;
+    border-right: 5px solid $base_color4;
+    z-index: 999;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include breakpoint(md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    @include mediumScreen {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .logoContainer {
+      padding: 30px 0;
+      display: flex;
+      place-content: center;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+
+      .logo_wrap {
+        img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          object-fit: contain;
+          cursor: pointer;
+
+          @include breakpoint(md) {
+            height: 3rem;
+            width: 6rem;
+          }
+
+          @include mediumScreen {
+            height: 3rem;
+            width: 6rem;
+          }
+        }
+
+        h1 {
+          color: $primary_color;
+          font-size: 1.3rem;
+          font-weight: 600;
+
+          @include mediumScreen {
+            font-size: 1.6rem;
+            font-weight: 700;
+          }
+        }
+      }
+      .translator {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+      }
+
+      div {
+        button {
+          display: flex;
+          align-items: center;
+          background-color: transparent;
+          border: 0;
+          font-size: 30px;
+          cursor: pointer;
+
+          &:hover {
+            color: $primary_color;
+          }
+        }
+      }
+    }
+
+    .ProfileContainer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $base_color4;
+      border-top: 1px solid $base_color4;
+
+      .profile_wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px 20px;
+
+        .profile {
+          aspect-ratio: 1;
+          height: 60px;
+          border-radius: 100%;
+          border: 1px solid $primary_color;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            object-fit: cover;
+          }
+        }
+
+        button {
+          font-size: 18px;
+          font-weight: 900;
+          color: $primary_color;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+
+          h5 {
+            color: $primary_color;
+            text-decoration: underline;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 1px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .menuContainer {
+      display: flex;
+      flex-direction: column;
+      place-content: center;
+      border-bottom: 1px solid $base_color4;
+      width: 100%;
+
+      .menutitle {
+        padding: 10px;
+
+        h4 {
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+
+      .menu_wrap {
+        padding: 10px 20px;
+
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+
+          .list_items {
+            display: flex;
+            align-items: center;
+          }
+
+          li,
+          .list_items {
+            width: 100%;
+            padding: 10px 0;
+            gap: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: $primary_color;
+              color: #fff;
+              border-radius: 3px;
+            }
+
+            .icons {
+              font-size: 18px;
+              padding-left: 10px;
+            }
+
+            span {
+              font-size: 16px;
+              font-weight: 400;
+            }
+
+            .Options {
+              display: flex;
+              justify-content: space-between;
+
+              .OptionsWrapper {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .icons {
+                  font-size: 18px;
+                  padding-left: 10px;
+                }
+
+                span {
+                  font-size: 16px;
+                  font-weight: 400;
+                }
+              }
+
+              .counter {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 10px;
+                padding: 2px;
+                width: 1rem;
+                height: 1rem;
+                font-size: 0.6rem;
+                color: #fff;
+                background-color: $primary_color;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Keyframes
+.in {
+  animation: slide-in 0.5s ease-in-out forwards;
+}
+
+.out {
+  animation: slide-Out 0.5s ease-in-out forwards;
+}
+
+//slide in
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+// slide Out
+@keyframes slide-Out {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}

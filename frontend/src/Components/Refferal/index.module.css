@@ -1,0 +1,101 @@
+.refferalContainer {
+  width: 100%;
+  max-width: 90%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out;
+}
+@media (max-width: 550px) {
+  .refferalContainer {
+    width: 100%;
+    max-width: 90%;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.descriptionList {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.descriptionList li {
+  margin-bottom: 10px;
+}
+
+.additionalNotes {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.refferalCodeSection {
+  margin-top: 30px;
+}
+
+.refferalHeader {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.codeSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 93%;
+  background-color: #046bd2; /* Light grey background */
+  color: white;
+  padding: 10px 15px; /* Slightly adjusted padding */
+  border-radius: 6px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+  letter-spacing: 5px;
+}
+@media (max-width: 550px) {
+  .codeSection {
+    width: 88%;
+  }
+}
+
+.codeSection:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+  background-color: #0f85fa; /* Lighter hover background */
+}
+
+.code {
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.copyButton {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: #046bd2;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+.copyButton:hover {
+  background-color: white; /* Hover state */
+  font-size: xx-large;
+}
+
+.copyIcon {
+  margin-right: 5px;
+}/*# sourceMappingURL=index.module.css.map */

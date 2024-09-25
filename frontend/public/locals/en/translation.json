@@ -1,0 +1,264 @@
+{
+  "PopulaCategoryHeading": "Explore Popular Category",
+  "ExploreProducts": "Explore Products",
+  "Prev": "Prev",
+  "Next": "Next",
+  "ContactMessage": "Have a question, suggestion, or just want to say hi? We'd love to hear from you! Our team at Deal and Buy is always eager to assist you.",
+  "ContactUs": "Contact Us",
+  "Company": "Company",
+  "AboutUs": "About Us",
+  "TermsConditions": "Terms & Conditions",
+  "PrivacyPolicy": "Privacy Policy",
+  "CookiesTechnologies": "Cookies and Similar Technologies",
+  "HelpCenter": "Help Center",
+  "Locations": "Locations",
+  "Kannur": "Kannur",
+  "Email": "Email",
+  "FooterText": "Copyright © 2023 - {year} DealNBuy. All Rights Reserved.",
+  "TermsOfUse": "Terms Of Use",
+
+  "dealNBuy": "DealNBuy",
+  "postFreeAd": "Post Free Ad",
+  "allCategories": "All Categories",
+  "searchHere": "Search Here",
+  "login": "Login",
+  "logout": "Logout",
+  "hello": "Hello",
+  "viewAndEditProfile": "View and edit Profile",
+  "myAccount": "My Account",
+  "postAd": "Post Ad",
+  "myAds": "My Ads",
+  "purchaseAds": "Purchase Ads",
+  "chats": "Chats",
+  "alerts": "Alerts",
+  "wishlist": "Wishlist",
+  "menu": "Menu",
+
+  "welcomeBack": "Welcome Back",
+  "addAdvertisement": "Add Advertisement",
+  "subscriptionPlans": "Subscription Plans",
+  "myWishlist": "My Wishlist",
+
+  "messages": "Messages",
+  "type_price": "Type a price",
+  "type_message": "Type Message",
+  "make_offer": "Make Offer",
+
+  "notification": "Notification",
+
+  "own_ads": "Own Ads",
+
+  "back": "Back",
+  "add_your_advertisement": "Add your advertisement",
+  "post_your_advertisement": "Post your advertisement in your desired size",
+
+  "title": "Title",
+  "key_features": "Mention the key features of item (e.g., Brand, Model, Type, etc.)",
+  "redirection_url": "Redirection URL",
+  "advertisement_size": "Advertisement Size",
+  "category": "Category",
+  "subcategory": "Subcategory",
+  "images": "Images",
+  "upload_image": "You can only upload up to one image. Choose multiple photos by choosing your best photo first as displayed in front and then add rest of photos with different angles to show specifications or damages if any.",
+  "country": "Country",
+  "state": "State",
+  "district": "District",
+  "locality": "Locality",
+  "add_advertisement": "Add Advertisement",
+  "india": "India",
+  "2x_size": "2X size",
+  "3x_size": "3X size",
+  "4x_size": "4X size",
+  "image_error": "You can only upload one image",
+
+  "Wegota_plan": "We've got a plan",
+  "thats_perfect": "that's perfect for you",
+  "remaining_ad_count": "Remaining Ad Count",
+
+  "side_profile": {
+    "account_setting": "ACCOUNT SETTING",
+    "wishlist": "Wishlist",
+    "my_ads": "My Ads",
+    "chat": "Chat",
+    "privacy_settings": "Privacy Settings",
+    "edit_profile": "Edit Profile",
+    "logout": "Logout"
+  },
+
+  "user_profiles": {
+    "personal_information": "Personal Information",
+    "edit": "Edit",
+    "pseudonym": "Pseudonym:",
+    "date_of_birth": "Date of Birth:",
+    "house_name": "House Name or Number / Flat Name or Number:",
+    "street_name": "Street Name:",
+    "locality": "Locality:",
+    "district": "District:",
+    "state": "State:",
+    "region": "Region:",
+    "email": "Email:",
+    "phone": "Phone:"
+  },
+
+  "choose_category": "Choose your Category",
+  "top_picks": "TOP PICKS",
+
+  "filter": "Filter",
+  "clear_all": "Clear All",
+  "nested_categories": "Nested Categories",
+  "location": "Location",
+  "price_range": "Price Range",
+  "choose_range_from_between": "Choose Range From Between",
+  "apply": "Apply",
+
+  "noProductFound": "No Product Found",
+
+  "adDetails": "Ad Details",
+  "reviews": "Reviews",
+  "chat": "Chat",
+  "call": "Call",
+  "sold": "Sold",
+  "solded": "Solded",
+  "description": "Description",
+  "adId": "Ad Id",
+  "productMarkedAsUnavailable": "Product marked as unavailable",
+  "somethingWentWrong": "Something went wrong!",
+  "chattingWithSelfError": "Oops! You are chatting with yourself!",
+
+
+  "Create Account": "Create Account",
+  "provideDetails": "Please provide your details to register on DealNBuy",
+  "firstName": "First Name",
+  "lastName": "Sur Name",
+  "dob": "Date of Birth",
+  "phoneNumber": "Phone Number",
+  "email": "E-mail",
+  "password": "Password",
+  "confirmPassword": "Confirm Password",
+  "acceptTerms": "I hereby accept the",
+  "termsOfUse": "Terms Of Use",
+  "privacyPolicy": "Privacy Policy",
+  "continue": "Continue",
+  "alreadyHaveAccount": "Already Have Account?",
+  "stepStatus": "Step {{step}} / 2",
+  "letsAuthenticate": "Let's Authenticate",
+  "otpSentTo": "We have sent you a One Time Password to your",
+  "enterOtp": "Enter Your Otp here",
+  "completeRegistration": "Complete Registration",
+  "resendOtp": "Resend OTP in {{timer}}s",
+  "resendOneTimePassword": "Resend One-Time Password",
+  "otpPlaceholder": "One Time Password",
+  "successfulRegistration": "User registration successful",
+  "alreadyUsedCredentials": "Already used these credentials",
+  "enterOtpError": "Enter the otp",
+  "enterProperDetails": "Enter proper details",
+  "invalidEmail": "Invalid email",
+  "emptyField": "Field can't be empty",
+  "min8Char": "Minimum 8 characters needed",
+  "confirmPasswordMismatch": "Enter correct password",
+  "spaceNumbersInvalid": "Space and Numbers are invalid",
+  "termsAccepted": "Terms of Use",
+  "privacyAccepted": "Privacy Policy",
+  "timerResendOtp": "Resend OTP in {{timer}}s",
+
+
+
+  "letsAuthenticatelogin": "Let's Authenticate",
+  "otpSentTolog": "We have sent you a One Time Password to your",
+  "enterOtpLabel": "Enter Your Otp here",
+  "otpPlaceholderlog": "One Time Password",
+  "completeRegistrationlog": "Complete Registration",
+  "continuelog": "Continue",
+  "resendOtpIn": "Resend OTP in",
+  "resendOneTimePasswordlog": "Resend One-Time Password",
+  "provideDetailslog": "Please provide your Mobile Number or Email to Login on DealNBuy",
+  "emailOrPhone": "Email / Phone Number",
+  "passwordlog": "Password",
+  "loginlog": "Login",
+  "forgotPassword": "Forgot Password?",
+  "dontHaveAccount": "Don't have an account?",
+  "signup": "Signup",
+  "credentialsInvalid": "Credentials are invalid",
+  "enterOtplog": "enter the otp",
+  "registrationSuccessful": "User registration successful",
+  "emailVerified": "Email has been successfully verified",
+  "otpResentPhone": "OTP resent to your phone number",
+  "otpResentEmail": "OTP resent to your email",
+
+
+  "letsFindYourAccount": "Let's find your Account",
+  "enterYourRegisteredEmail": "Enter your registered Email",
+  "phoneNumberPlaceholder": "Phone Number",
+  "emailNotRegistered": "My Email not registered",
+  "usePhoneNumberInstead": "Use Phone Number instead",
+  "phoneNumberNotRegistered": "My Phone Number not registered",
+  "useEmailInstead": "Use Email instead",
+  "previous":"Previous",
+  "Next":"Next",
+  "search":"Search",
+  "brand":"Brand",
+  "year":"Year",
+  "kmDriven":"KM Driven",
+  "fuel":"Fuel",
+  "transmission":"Transmission",
+  "numberOfOwners":"No. of Owners",
+  "Type": "Type",
+  "Product Type": "Product Type",
+  "Resolution": "Resolution",
+  "Instrument Type": "Instrument Type",
+"Appliance Type": "Appliance Type",
+"GENRE": "GENRE",
+"USED/NEW": "USED/NEW",
+"Condition": "Condition",
+"Category": "Category",
+"FURNITURE MATERIAL": "FURNITURE MATERIAL",
+"Role": "Role",
+"Salary From": "Salary From",
+"Salary To": "Salary To",
+"Experience": "Experience",
+"Hiring For ( Company Name )": "Hiring For ( Company Name )",
+"City": "City"
+,"Locality": "Locality",
+"Accessories Type": "Accessories Type",
+"Pet Type": "Pet Type",
+"Car Parking": "Car Parking",
+"Bedrooms": "Bedrooms",
+"Bathrooms": "Bathrooms",
+"Facing": "Facing",
+"Super Builtup Area": "Super Builtup Area",
+"Carpet Area": "Carpet Area",
+"Maintenance ( Monthly )": "Maintenance ( Monthly )",
+"Total Floors": "Total Floors",
+"Floor No": "Floor No",
+"Project Name": "Project Name",
+"Furnishing": "Furnishing",
+"Construction Status": "Construction Status",
+"RefferaFriend": "Refer a Friend"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

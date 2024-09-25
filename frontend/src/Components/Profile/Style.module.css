@@ -1,0 +1,305 @@
+.Left_Container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2.5rem;
+}
+@media (max-width: 550px) {
+  .Left_Container {
+    padding: 0;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .Left_Container {
+    padding: 1rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+  .Left_Container {
+    padding: 1rem;
+  }
+}
+.Left_Container .navigation {
+  text-decoration: none;
+  color: #111;
+}
+.Left_Container .navigation:hover {
+  color: #fff;
+}
+.Left_Container .profile_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid #f8f8f8;
+}
+.Left_Container .profile_section img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Left_Container .profile_section .items {
+  display: none;
+}
+@media (max-width: 550px) {
+  .Left_Container .profile_section .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .Left_Container .profile_section .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.Left_Container .profile_section .items h3 {
+  color: #555;
+  padding: 5px;
+}
+.Left_Container .profile_section .items h4 {
+  padding: 5px;
+  font-size: 14px;
+  color: #555;
+}
+.Left_Container .info_section {
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #f8f8f8;
+}
+.Left_Container .info_section h3 {
+  color: #046BD2;
+  font-size: 16px;
+  padding: 10px 0;
+}
+.Left_Container .info_section ul {
+  text-align: start;
+  text-decoration: none;
+  list-style: none;
+}
+.Left_Container .info_section ul .edit_profile {
+  display: none;
+}
+@media (max-width: 550px) {
+  .Left_Container .info_section ul .edit_profile {
+    display: contents;
+  }
+}
+.Left_Container .info_section ul .active {
+  background-color: #046BD2;
+  color: #fff;
+  border-radius: 5px;
+}
+.Left_Container .info_section ul li {
+  padding: 10px;
+  margin-bottom: 0.2rem;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+.Left_Container .info_section ul li:hover {
+  background-color: #046BD2;
+  color: #fff;
+  border-radius: 5px;
+}
+.Left_Container .log_section {
+  text-align: center;
+  padding: 1rem 0;
+}
+.Left_Container .log_section ul {
+  text-align: start;
+  text-decoration: none;
+  list-style: none;
+}
+.Left_Container .log_section ul li {
+  padding: 10px;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+.Left_Container .log_section ul li:hover {
+  background-color: #046BD2;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.Right_Container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 3rem;
+  border-left: 2px solid #f8f8f8;
+  position: relative;
+}
+@media (max-width: 550px) {
+  .Right_Container {
+    display: none;
+  }
+}
+.Right_Container .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+.Right_Container .header .headerDiv h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.Right_Container .header .headerBtnDiv {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.Right_Container .header .headerBtnDiv button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #046BD2;
+  gap: 5px;
+  background: none;
+  border: none;
+  font-size: medium;
+  cursor: pointer;
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .Right_Container .header .headerBtnDiv button {
+    right: 20px;
+  }
+}
+.Right_Container .header .headerBtnDiv button .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Right_Container .details {
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+}
+.Right_Container .details .itemTitle {
+  margin: 10px 5px;
+  color: #555;
+}
+.Right_Container .details .detailItem {
+  margin: 0.8rem 0.5rem;
+  font-size: 14px;
+  display: flex;
+}
+.Right_Container .details .detailItem .itemKey {
+  font-weight: bold;
+  color: gray;
+  margin-right: 10px;
+}
+.Right_Container .details .detailItem .itemValue {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 300;
+}
+.Right_Container .details .detailItem .itemValue .verifyIcon {
+  color: #03C03C;
+  font-size: 14px;
+  text-align: center;
+}
+
+.top {
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 550px) {
+  .top {
+    padding: 10px;
+  }
+}
+.top .left {
+  flex: 6;
+  padding: 20px 40px;
+  border-radius: 5px;
+  background-color: #ebebeb;
+}
+@media (max-width: 550px) {
+  .top .left {
+    padding: 10px;
+  }
+}
+.top .left .title {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+}
+.top .left .item {
+  display: flex;
+  gap: 60px;
+}
+@media (max-width: 550px) {
+  .top .left .item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.top .left .item .itemImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 20px;
+}
+@media (max-width: 550px) {
+  .top .left .item .details {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.top .left .item .details .itemTitle {
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 550px) {
+  .top .left .item .details .itemTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+}
+.top .left .item .details .detailItem {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.top .left .item .details .detailItem .itemKey {
+  font-weight: bold;
+  color: gray;
+  margin-right: 5px;
+}
+@media (max-width: 550px) {
+  .top .left .item .details .detailItem .itemKey {
+    font-size: 12px;
+  }
+}
+.top .left .item .details .detailItem .itemValue {
+  font-weight: 300;
+}
+@media (max-width: 550px) {
+  .top .left .item .details .detailItem .itemValue {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=Style.module.css.map */

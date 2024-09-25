@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  background-color: white; /* White background for the form */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between input and button */
+  margin-bottom: 15px;
+}
+
+.input {
+  flex: 1;
+  padding: 12px 0; /* Adjust padding for top and bottom */
+  border: none; /* Remove all borders */
+  border-bottom: 2px solid #007bff; /* Blue bottom border */
+  font-size: 1rem;
+  background-color: white; /* White background */
+  color: #007bff; /* Blue text */
+}
+
+.input::-moz-placeholder {
+  color: #007bff; /* Blue color for placeholder text */
+}
+
+.input::placeholder {
+  color: #007bff; /* Blue color for placeholder text */
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 2px solid #0056b3; /* Darker blue border on focus */
+}
+
+.submitButton {
+  color: white; /* White button background */
+  background-color: #007bff; /* Blue text color */
+  padding: 12px 20px;
+  border: 2px solid #007bff; /* Blue border for the button */
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #007bff; /* Blue background on hover */
+  color: white; /* White text on hover */
+}/*# sourceMappingURL=index.module.css.map */

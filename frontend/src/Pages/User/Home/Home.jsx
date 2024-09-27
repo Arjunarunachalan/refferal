@@ -12,7 +12,7 @@ import {
 import HomeCarousel from "../../../Components/Carousels/HomeCarousel/HomeCarousel";
 import LeftCategory from "../../../Components/HomeCategory/LeftCategory";
 import RightCategory from "../../../Components/HomeCategory/RightCategory";
-import TopCategory from "../../../Components/HomeCategory/TopCategory";
+import ReffaralModal from "../../../Components/Models/RefferalModal/ReffaralModal";
 import { useTranslation } from "react-i18next";
 
 const Home = () => {
@@ -24,7 +24,38 @@ const Home = () => {
   const [IsLastPage, SetIsLastPage] = useState(false);
   const [catToggle, setCatToggle] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  useEffect(() => {
+    localStorage.setItem('isighnin', true);  
+    const hasSignedUp = localStorage.getItem('isighnin');
+    console.log(hasSignedUp,"nbdhw");
+    
+    if (hasSignedUp) {
+      setIsModalOpen(true);
+      document.body.style.overflow = 'hidden';  
+    }
+
+    // Event listener to detect tab closing and clear the localStorage
+    const handleTabClose = (event) => {
+      localStorage.removeItem('isighnin');
+    };
+    
+    window.addEventListener('beforeunload', handleTabClose);
+
+    return () => {
+      document.body.style.overflow = 'auto';
+      window.removeEventListener('beforeunload', handleTabClose);
+    };
+  }, []);
+
+  const handleRefer = () => {
+    // Remove hasSignedUp when user clicks Refer
+    localStorage.removeItem('isighnin');
+    // Add your Refer logic here
+  };
+
+ 
 
 const {t}  =useTranslation()
 
@@ -139,6 +170,13 @@ const {t}  =useTranslation()
       </div> */}
       {/* <ScrollToTopOnMount /> */}
       <Navbar setLocation={setLocation} location={location} togglefunc={setCatToggle} toggleState={catToggle}/>
+      {
+         isModalOpen?(
+          <div className={Style.Reffermodal_container}>
+            <ReffaralModal handleRefer={handleRefer} setIsModalOpen={setIsModalOpen}/>
+          </div>
+         ):""
+          }
       <HomeCarousel items={SliderImage} />
       <div className={Style.Main_container}>
         <div className={Style.Left} style={{display:catToggle ? 'block': 'none'}}>
@@ -192,6 +230,8 @@ const {t}  =useTranslation()
               </div>
             ) : null}
           </div>
+         
+          
         </div>
       </div>
       <Newsletter />

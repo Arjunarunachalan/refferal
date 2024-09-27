@@ -1,6 +1,7 @@
 .home_container {
   width: 100%;
   margin-top: 5rem;
+  position: relative;
 }
 @media (max-width: 550px) {
   .home_container {
@@ -172,4 +173,16 @@
 .home_container .Main_container .Right .cardWrapper .loadbtn .activeBtn .icon {
   font-size: 20px;
   font-weight: 900;
+}
+.home_container .Reffermodal_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
 }/*# sourceMappingURL=index.module.css.map */

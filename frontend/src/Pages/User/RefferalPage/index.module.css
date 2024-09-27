@@ -47,6 +47,12 @@
   /* Active button with blue bottom border */
   /* Inactive button border */
 }
+@media (max-width: 550px) {
+  .navbarItem {
+    padding: 14px 13px;
+    font-size: 17px;
+  }
+}
 .navbarItem:hover {
   color: #007bff; /* Hover color */
 }

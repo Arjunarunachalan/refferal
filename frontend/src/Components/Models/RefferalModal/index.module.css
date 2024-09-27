@@ -1,0 +1,60 @@
+.modalContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  max-width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  padding: 30px;
+  position: relative;
+  background-color: white;
+}
+@media (max-width: 550px) {
+  .modalContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 80vw;
+    height: auto;
+    padding: 21px;
+  }
+}
+.modalContent .closeIconWrapper {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 10px; /* Correct positioning with px */
+  right: 10px; /* Correct positioning with px */
+}
+.modalContent .closeIconWrapper .closeButton {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  width: 10px;
+}
+.modalContent .refferimage {
+  width: 250px;
+  height: auto;
+}
+.modalContent p {
+  font-size: medium;
+  font-size: 16px;
+}
+.modalContent .referralButton {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.modalContent .referralButton:hover {
+  background-color: #218838;
+}/*# sourceMappingURL=index.module.css.map */

@@ -643,7 +643,7 @@ const Navbar = ({ location, setLocation, reload, togglefunc, toggleState }) => {
                       }}
                     >
                       <BiLogOut className={Style.icons} />
-                      <span>{t("logout")}</span>
+                      <span onClick={()=>{localStorage.removeItem('isighnin')}}>{t("logout")}</span>
                     </li>
                   ) : null}
                 </ul>

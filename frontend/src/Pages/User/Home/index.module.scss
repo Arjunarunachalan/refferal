@@ -4,6 +4,7 @@
   //height: 100vh;
   width: 100%;
   margin-top: 5rem;
+  position: relative;
 
   @include breakpoint(md) {
     margin-top: 7rem;
@@ -172,5 +173,17 @@
         }
       }
     }
+  }
+  .Reffermodal_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); // semi-transparent background
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; // ensure it appears on top
   }
 }

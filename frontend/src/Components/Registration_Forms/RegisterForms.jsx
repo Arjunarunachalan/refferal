@@ -270,6 +270,7 @@ const {i18n,t}=useTranslation()
           .then((response) => {
             SetLoading(false);
             toast.success("Product Added Successfully");
+            localStorage.setItem('isighnin', true);
             Navigate("/postadd");
 
             SetProductData({
